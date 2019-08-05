@@ -1,2 +1,0 @@
-# BATCH
-.bat
