@@ -1,0 +1,18 @@
+Remova os arquivos de ativação pelo registro do Windows e também a chave de ativação da versão Professional Plus no script do Office 2016: 
+1. Pressione as teclas Windows+Q digite CMD;
+2. Clique com botão o direito sobre CMD e selecione Executar como Administrador;
+3. Cole o comando abaixo:
+•	REG DELETE "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Common\Internet\WebServiceCache\AllUsers\officeclient.microsoft.com" 
+A seguir remova a chave de ativação do Office 2016 (365):
+1. Pressione as teclas Windows+Q e digite CMD;
+2. Clique com o botão direito do Mouse sobre CMD e escolha Executar como Administrador;
+3. Cole os comandos abaixo e pressione Enter:
+•	Para Office 2016:
+•	Instalado em x32 bits - Cole o comando: CD C:\Program Files (x86)\Microsoft Office\Office16 [Enter]
+•	Instalado em x64 Bits - Cole o comando: CD C:\Program Files\Microsoft Office\Office16 [Enter]
+•	Para Office 2013:
+•	Instalado em x32 Bits - Cole o comando: CD C:\Program Files (x86)\Microsoft Office\Office15 [Enter]
+•	Instalado em x64 bits - Cole o comando: CD C:\Program Files\Microsoft Office\Office15 [Enter]
+4. Insira o comando: Cscript ospp.vbs /dstatus [Enter] (Irá apresentar os últimos 05 dígitos do Office 2013 ou 2016)
+ 
+ 5. Insira o comando: Cscript ospp.vbs /unpkey:xxxxx [Enter] (Último cinco dígitos da chave do Office 2013 ou 2016)
