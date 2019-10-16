@@ -1,0 +1,4 @@
+1 - Acesse o seguinte endereço: chrome:\\flags
+2 - Procure por “Tab freeze” na parte de buscas da página aberta
+3 - Mude o seu valor padrão para “Enabled”
+4 - Na mensagem que aparece, clique em “Relaunch”
